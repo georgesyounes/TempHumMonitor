@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:gauge="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/gradient_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GaugeActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="184dp"
+        android:layout_height="62dp"
+
+        android:layout_alignParentStart="true"
+
+
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="101dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="5dp"
+        app:srcCompat="@drawable/p1" />
+
+    <de.nitri.gauge.Gauge
+        android:id="@+id/gauge1"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+
+        android:layout_gravity="center"
+        android:layout_marginStart="70dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="453dp"
+        gauge:initialValue="0"
+        gauge:maxValue="100"
+        gauge:minValue="0"
+        gauge:totalNicks="120"
+        gauge:valuePerNick="1" />
+
+
+    <de.nitri.gauge.Gauge
+        android:id="@+id/gauge2"
+
+        android:layout_width="245dp"
+        android:layout_height="239dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="170dp"
+        gauge:initialValue="0"
+        gauge:maxValue="40"
+        gauge:minValue="0"
+        gauge:totalNicks="120"
+        gauge:valuePerNick="0.5"
+
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="232dp"
+        android:layout_height="31dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="136dp"
+        android:text="        Temperature"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/ServerRoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="107dp"
+        android:layout_marginLeft="107dp"
+        android:layout_marginTop="66dp"
+        android:text="Server Room"
+        android:textSize="30sp" />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="232dp"
+        android:layout_height="31dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="86dp"
+        android:layout_marginLeft="86dp"
+        android:layout_marginTop="416dp"
+        android:text="          Humidity"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/tempdanger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginTop="342dp"
+        android:layout_marginEnd="195dp"
+        android:layout_marginRight="195dp"
+        android:src="@drawable/danger"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/humdanger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginTop="636dp"
+        android:layout_marginEnd="191dp"
+        android:layout_marginRight="191dp"
+        android:src="@drawable/danger"
+        android:visibility="invisible" />
+</RelativeLayout>
